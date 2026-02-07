@@ -1,0 +1,90 @@
+@import url('photo.css');
+@import url('contact.css');
+@import url('bildung.css');
+@import url('skills.css');
+@import url('erfahrung.css');
+
+* {
+	/* border: 1px solid red; */
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 12pt;
+	background: lightblue;
+	/* overflow: hidden; */
+}
+
+.page {
+	width: 210mm;
+	height: 297mm;
+	margin: auto;
+	page-break-after: always;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.page .left {
+	position: relative;
+	background: indigo;
+	padding: 35px 20px 35px 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.left1 {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ctn-ul+.ctn-ul {
+	margin-top: auto;
+	/* Margin in between but not at the top or end */
+}
+
+
+.ctn-ul .title {
+	color: white;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+/* .ctn-ul ul {
+	position: relative;
+} */
+
+.ctn-ul ul li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 8px;
+}
+
+.ctn-ul ul li,
+.ctn-ul span,
+.ctn-ul a {
+	color: white;
+	font-size: 11pt;
+	font-weight: 300;
+	line-height: 1.4;
+	text-decoration: none;
+}
+
+.page .right {
+	position: relative;
+	background: white;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+}
+
+.right .title2 {
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-size: 14pt;
+	color: indigo;
+}
